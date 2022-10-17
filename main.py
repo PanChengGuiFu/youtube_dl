@@ -8,7 +8,7 @@ def download(youtube_url):
     ydl_opts = {
         # outtmpl 格式化下载后的文件名，避免默认文件名太长无法保存
         'outtmpl': '%(title)s.f%(format_id)s.%(ext)s',
-        # 'simulate': 'simulate',
+        'simulate': 'simulate',
         'format': 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b',
         'no_warnings': 'no_warnings',
 
